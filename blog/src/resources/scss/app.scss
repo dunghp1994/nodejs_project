@@ -1,0 +1,7 @@
+@import 'variables';
+.test {
+  color: $red-color;
+  line-height: 2rem;
+  font-size: $font-size;
+  width: 100px;
+}
