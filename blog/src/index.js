@@ -4,12 +4,20 @@ const morgan = require('morgan')
 const { engine } = require ('express-handlebars');
 const app = express()
 const port = 3000
-
+const route = require('./routes');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+//add midleware
+app.use(express.urlencoded({
+  extended: true
+}));
+app.use(express.urlencoded({
+  extended: true
+}));
+
 // HTTP Logger
-app.use(morgan('combined'))
+// app.use(morgan('combined')) 
 
 //Template engine
 app.engine('hbs', engine({
@@ -21,11 +29,8 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
 
 
-console.log()
-
-app.get('/tin-tuc', (req, res) => {
-  res.render('home');
-})
+//route init (khoi tao)
+route(app);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
