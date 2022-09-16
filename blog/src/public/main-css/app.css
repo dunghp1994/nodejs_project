@@ -1,0 +1,16 @@
+.test {
+  color: red;
+  line-height: 2rem;
+  font-size: 5rem;
+  width: 100px; }
+
+.header-fabicon {
+  flex-shrink: 0;
+  height: 35px;
+  width: 30px;
+  border-radius: 7px;
+  object-fit: contain; }
+
+h2 {
+  font-size: large;
+  color: #2b00ff; }

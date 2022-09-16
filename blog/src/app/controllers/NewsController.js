@@ -1,3 +1,4 @@
+// tao function
 class NewController {
   // [GET] / news
   index(req, res) {

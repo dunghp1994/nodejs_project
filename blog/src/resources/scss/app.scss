@@ -5,3 +5,14 @@
   font-size: $font-size;
   width: 100px;
 }
+.header-fabicon {
+  flex-shrink: 0;
+  height: 35px;
+  width: 30px;
+  border-radius: 7px;
+  object-fit: contain;
+}
+h2 {
+  font-size: large;
+  color: rgb(43, 0, 255);
+}
